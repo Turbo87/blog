@@ -6,7 +6,7 @@ AUTHOR = u'SkyLines Team'
 SITENAME = u'SkyLines'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = u'en'
 
