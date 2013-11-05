@@ -10,12 +10,3 @@
 {% endif %}
 {% endblock %}
 
-{% block header %}
-<p>Tag: {{ tag }}
-{% if TAG_FEED_ATOM %}
-&#124; <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag) }}">Atom Feed</a>
-{% endif %}
-{% if TAG_FEED_RSS %}
-&#124; <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag) }}">RSS Feed</a>
-{% endif %}</p>
-{% endblock %}
