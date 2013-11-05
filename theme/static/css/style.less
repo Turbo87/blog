@@ -79,7 +79,7 @@ aside {
 }
 
 
-article, footer {
+article, footer, #ending_message {
   border-top: @light-grey 1px solid;
 }
 
@@ -140,13 +140,9 @@ main {
     }
   }
 
-  footer {
-    border-top: @light-grey 1px solid;
-    border-bottom: @light-grey 1px solid;
+  footer > div, footer > p {
+    margin: 0;
     padding: 40px;
-
-    div#paginator {
-    }
   }
 
   div#ending_message {
