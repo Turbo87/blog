@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'SkyLines Team'
 SITENAME = u'SkyLines'
+TAGLINE = u'flight database, live tracking and more'
 SITEURL = ''
 
 TIMEZONE = 'Europe/Berlin'
