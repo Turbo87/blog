@@ -63,19 +63,25 @@
 
     <footer>
       {% block footer %}
-      <p>
-      <a href="{{ SITEURL }}/">Index</a> &#124; <a href="{{ SITEURL }}/archives.html">Archives</a>
-      {% if FEED_ALL_ATOM %}
-      &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom Feed</a>
-      {% endif %}
-      {% if FEED_ALL_RSS %}
-      &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS Feed</a>
-      {% endif %}
-      </p>
       {% endblock %}
     </footer>
 
     <div id="ending_message">
+      <p class="feeds">
+        <a href="{{ SITEURL }}/">Index</a>
+        &#124; <a href="{{ SITEURL }}/archives.html">Archives</a>
+
+        {% block feeds %}
+        {% if FEED_ALL_ATOM %}
+        &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">ATOM</a>
+        {% if FEED_ALL_RSS %}&#124;{% endif %}
+        {% endif %}
+
+        {% if FEED_ALL_RSS %}
+        &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
+        {% endif %}</p>
+        {% endblock %}
+      </p>
       <p>&copy; {{ AUTHOR }}. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>.</p>
     </div>
   </main>
