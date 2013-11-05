@@ -34,14 +34,14 @@
 <body>
   <aside>
     <div id="user_meta">
-      <a href="{{ SITEURL }}">
+      <a href="{{ SITEURL }}/">
         {% if USER_LOGO_URL %}
         <img src="{{ USER_LOGO_URL }}" alt="logo">
         {% else %}
         <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
         {% endif %}
       </a>
-      <h2><a href="{{ SITEURL }}">{{ SITENAME }}</a></h2>
+      <h2><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h2>
       <p>{{ TAGLINE }}</p>
       <ul>
         {% for title, link in MENUITEMS %}
@@ -64,7 +64,7 @@
     <header>
       {% block header %}
       <p>
-      <a href="{{ SITEURL }}">Index</a> &#124; <a href="{{ SITEURL }}/archives.html">Archives</a>
+      <a href="{{ SITEURL }}/">Index</a> &#124; <a href="{{ SITEURL }}/archives.html">Archives</a>
       {% if FEED_ALL_ATOM %}
       &#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom Feed</a>
       {% endif %}
