@@ -9,7 +9,10 @@ SITEURL = ''
 
 TIMEZONE = 'Europe/Berlin'
 
+DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en'
+
+FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 
 THEME = 'theme'
 
