@@ -7,7 +7,8 @@
   </div>
   <div class="article_meta">
     {% if not hide_category_meta %}in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>,{% endif %}
-    on {{ article.locale_date }}
+    on {{ article.locale_date }},
+    by {{ article.author }}
   </div>
   <div class="article_text">
     {{ article.summary }}
