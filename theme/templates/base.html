@@ -42,13 +42,7 @@
       <h2><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h2>
       <p><a href="https://www.skylines-project.org/">www.skylines-project.org</a></p>
       <ul>
-        {% set menu = [
-          ('General', 'general'),
-          ('New Features', 'new-features'),
-          ('Live Tracking', 'live-tracking'),
-          ('Engineering', 'engineering'),
-        ] %}
-        {% for title, slug in menu %}
+        {% for title, slug in MENUITEMS %}
         <li{% if title == category %} class="active"{% endif %}>
           <a href="{{ SITEURL }}/{{ CATEGORY_URL|replace('{slug}', slug) }}">{{ title }}</a>
         </li>

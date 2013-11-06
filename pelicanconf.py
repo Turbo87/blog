@@ -6,6 +6,13 @@ AUTHOR = u'SkyLines Team'
 SITENAME = u'SkyLines Blog'
 SITEURL = ''
 
+MENUITEMS = [
+  ('General', 'general'),
+  #('New Features', 'new-features'),
+  #('Live Tracking', 'live-tracking'),
+  #('Engineering', 'engineering'),
+]
+
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_CATEGORY = u'General'
