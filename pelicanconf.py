@@ -8,9 +8,9 @@ SITEURL = ''
 
 MENUITEMS = [
   ('General', 'general'),
-  #('New Features', 'new-features'),
-  #('Live Tracking', 'live-tracking'),
-  #('Engineering', 'engineering'),
+  ('New Features', 'new-features'),
+  ('Live Tracking', 'live-tracking'),
+  ('Engineering', 'engineering'),
 ]
 
 TIMEZONE = 'Europe/Berlin'
