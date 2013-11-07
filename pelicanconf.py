@@ -16,10 +16,9 @@ MENUITEMS = [
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_CATEGORY = u'General'
-DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en'
 
-FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
+FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 
 THEME = 'theme'
 
